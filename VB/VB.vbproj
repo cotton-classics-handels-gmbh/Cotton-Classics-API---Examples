@@ -48,9 +48,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CC.CustomerAPIData">
-      <HintPath>..\..\cotton-classics-handels-gmbh\Cotton-Classics-NT\Test-Center\bin\Debug\CC.CustomerAPIData.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
