@@ -270,13 +270,16 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://api.cottonclassics.com")>  _
-        Public ReadOnly Property ApiUrl() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property ProcessID() As String
             Get
-                Return CType(Me("ApiUrl"),String)
+                Return CType(Me("ProcessID"),String)
             End Get
+            Set
+                Me("ProcessID") = value
+            End Set
         End Property
     End Class
 End Namespace

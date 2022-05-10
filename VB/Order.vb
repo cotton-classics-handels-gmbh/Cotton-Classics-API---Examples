@@ -1,4 +1,9 @@
-﻿Public Class Order
+﻿Imports System.IO
+
+Public Class Order
+
+    Private Const apiURL As String = "https://api.cottonclassics.com/api/Order"
+
     Private Sub SendButton_Click(sender As Object, e As EventArgs) Handles SendButton.Click
 
         Try
@@ -10,23 +15,18 @@
             'array.
             Dim requestStream As Byte() = System.Text.Encoding.UTF8.GetBytes(requestObject.GetJSON)
 
-
             'Setting up the Credidentials for the Server
             Dim credidentials As New Net.CredentialCache From {
-                {New Uri(My.Settings.ApiUrl), "Basic", New Net.NetworkCredential(UsernameText.Text,
+                {New Uri(apiURL), "Basic", New Net.NetworkCredential(UsernameText.Text,
                                                                                  PasswordText.Text)}
             }
 
             'Setting up the Web Request
-            Dim webRequest = Net.WebRequest.CreateHttp(My.Settings.ApiUrl)
+            Dim webRequest = Net.WebRequest.CreateHttp(apiURL)
             With webRequest
                 .Method = "POST"
-                .Accept = "*/*"
-                .Headers.Add("Accept-Language", "de-DE")
                 .ContentType = "application/json"
                 .ContentLength = requestStream.Length
-                .Headers.Add("Accept-Encoding", "gzip, deflate")
-                .Headers.Add("Pragma", "no-cache")
                 .UserAgent = "Order Test App"
                 .ServicePoint.Expect100Continue = False
                 .Credentials = credidentials
@@ -39,6 +39,21 @@
 
             'Parsing the Response
             Dim response = webRequest.GetResponse
+
+            If response.ContentType = "application/json" Then
+                'We read the Response to an memory stream..
+                Dim stream = response.GetResponseStream
+
+                Dim reader As New StreamReader(stream)
+                Dim responseData = reader.ReadToEnd
+
+                '.. and display the results in another form
+                Dim form As New JsonPreview(responseData)
+                form.Show()
+            Else
+                response.Close()
+                Throw New Exception("Unexpected Response Content: " & response.ContentType)
+            End If
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -108,7 +123,6 @@
         Next
 
         Return request
-
     End Function
 
 
