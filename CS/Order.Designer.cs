@@ -91,26 +91,28 @@ namespace CS
             // 
             // JSONButton
             // 
-            this.JSONButton.Location = new System.Drawing.Point(553, 330);
+            this.JSONButton.Location = new System.Drawing.Point(543, 330);
             this.JSONButton.Name = "JSONButton";
             this.JSONButton.Size = new System.Drawing.Size(102, 23);
-            this.JSONButton.TabIndex = 118;
+            this.JSONButton.TabIndex = 87;
             this.JSONButton.Text = "Preview JSON";
             this.JSONButton.UseVisualStyleBackColor = true;
+            this.JSONButton.Click += new System.EventHandler(this.JSONButton_Click);
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(661, 330);
+            this.SendButton.Location = new System.Drawing.Point(651, 330);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
-            this.SendButton.TabIndex = 117;
+            this.SendButton.TabIndex = 89;
             this.SendButton.Text = "Send Order";
             this.SendButton.UseVisualStyleBackColor = true;
+            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
             // Label32
             // 
             this.Label32.AutoSize = true;
-            this.Label32.Location = new System.Drawing.Point(12, 330);
+            this.Label32.Location = new System.Drawing.Point(2, 330);
             this.Label32.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label32.Name = "Label32";
             this.Label32.Size = new System.Drawing.Size(135, 13);
@@ -120,7 +122,7 @@ namespace CS
             // Label31
             // 
             this.Label31.AutoSize = true;
-            this.Label31.Location = new System.Drawing.Point(524, 159);
+            this.Label31.Location = new System.Drawing.Point(514, 159);
             this.Label31.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label31.Name = "Label31";
             this.Label31.Size = new System.Drawing.Size(11, 13);
@@ -130,7 +132,7 @@ namespace CS
             // Label30
             // 
             this.Label30.AutoSize = true;
-            this.Label30.Location = new System.Drawing.Point(418, 159);
+            this.Label30.Location = new System.Drawing.Point(408, 159);
             this.Label30.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label30.Name = "Label30";
             this.Label30.Size = new System.Drawing.Size(11, 13);
@@ -140,7 +142,7 @@ namespace CS
             // Label29
             // 
             this.Label29.AutoSize = true;
-            this.Label29.Location = new System.Drawing.Point(464, 185);
+            this.Label29.Location = new System.Drawing.Point(454, 185);
             this.Label29.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label29.Name = "Label29";
             this.Label29.Size = new System.Drawing.Size(11, 13);
@@ -150,7 +152,7 @@ namespace CS
             // Label28
             // 
             this.Label28.AutoSize = true;
-            this.Label28.Location = new System.Drawing.Point(524, 133);
+            this.Label28.Location = new System.Drawing.Point(514, 133);
             this.Label28.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label28.Name = "Label28";
             this.Label28.Size = new System.Drawing.Size(11, 13);
@@ -160,7 +162,7 @@ namespace CS
             // Label27
             // 
             this.Label27.AutoSize = true;
-            this.Label27.Location = new System.Drawing.Point(524, 55);
+            this.Label27.Location = new System.Drawing.Point(514, 55);
             this.Label27.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label27.Name = "Label27";
             this.Label27.Size = new System.Drawing.Size(11, 13);
@@ -170,7 +172,7 @@ namespace CS
             // Label26
             // 
             this.Label26.AutoSize = true;
-            this.Label26.Location = new System.Drawing.Point(210, 133);
+            this.Label26.Location = new System.Drawing.Point(200, 133);
             this.Label26.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label26.Name = "Label26";
             this.Label26.Size = new System.Drawing.Size(11, 13);
@@ -180,7 +182,7 @@ namespace CS
             // Label25
             // 
             this.Label25.AutoSize = true;
-            this.Label25.Location = new System.Drawing.Point(210, 107);
+            this.Label25.Location = new System.Drawing.Point(200, 107);
             this.Label25.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label25.Name = "Label25";
             this.Label25.Size = new System.Drawing.Size(11, 13);
@@ -190,7 +192,7 @@ namespace CS
             // Label24
             // 
             this.Label24.AutoSize = true;
-            this.Label24.Location = new System.Drawing.Point(210, 55);
+            this.Label24.Location = new System.Drawing.Point(200, 55);
             this.Label24.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label24.Name = "Label24";
             this.Label24.Size = new System.Drawing.Size(11, 13);
@@ -200,7 +202,7 @@ namespace CS
             // Label23
             // 
             this.Label23.AutoSize = true;
-            this.Label23.Location = new System.Drawing.Point(210, 29);
+            this.Label23.Location = new System.Drawing.Point(200, 29);
             this.Label23.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.Label23.Name = "Label23";
             this.Label23.Size = new System.Drawing.Size(11, 13);
@@ -211,7 +213,7 @@ namespace CS
             // 
             this.Label17.AutoSize = true;
             this.Label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label17.Location = new System.Drawing.Point(574, 9);
+            this.Label17.Location = new System.Drawing.Point(564, 9);
             this.Label17.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label17.Name = "Label17";
             this.Label17.Size = new System.Drawing.Size(74, 17);
@@ -221,7 +223,7 @@ namespace CS
             // Label20
             // 
             this.Label20.AutoSize = true;
-            this.Label20.Location = new System.Drawing.Point(279, 300);
+            this.Label20.Location = new System.Drawing.Point(269, 300);
             this.Label20.Name = "Label20";
             this.Label20.Size = new System.Drawing.Size(51, 13);
             this.Label20.TabIndex = 105;
@@ -229,127 +231,127 @@ namespace CS
             // 
             // CommentText
             // 
-            this.CommentText.Location = new System.Drawing.Point(361, 297);
+            this.CommentText.Location = new System.Drawing.Point(351, 297);
             this.CommentText.Name = "CommentText";
             this.CommentText.Size = new System.Drawing.Size(160, 20);
-            this.CommentText.TabIndex = 104;
+            this.CommentText.TabIndex = 82;
             // 
             // Label21
             // 
             this.Label21.AutoSize = true;
-            this.Label21.Location = new System.Drawing.Point(279, 274);
+            this.Label21.Location = new System.Drawing.Point(269, 274);
             this.Label21.Name = "Label21";
             this.Label21.Size = new System.Drawing.Size(82, 13);
-            this.Label21.TabIndex = 103;
+            this.Label21.TabIndex = 104;
             this.Label21.Text = "Your Reference";
             // 
             // ReferenceText
             // 
-            this.ReferenceText.Location = new System.Drawing.Point(361, 271);
+            this.ReferenceText.Location = new System.Drawing.Point(351, 271);
             this.ReferenceText.Name = "ReferenceText";
             this.ReferenceText.Size = new System.Drawing.Size(160, 20);
-            this.ReferenceText.TabIndex = 102;
+            this.ReferenceText.TabIndex = 81;
             // 
             // Label22
             // 
             this.Label22.AutoSize = true;
-            this.Label22.Location = new System.Drawing.Point(279, 248);
+            this.Label22.Location = new System.Drawing.Point(269, 248);
             this.Label22.Name = "Label22";
             this.Label22.Size = new System.Drawing.Size(54, 13);
-            this.Label22.TabIndex = 101;
+            this.Label22.TabIndex = 103;
             this.Label22.Text = "Comission";
             // 
             // ComissionText
             // 
-            this.ComissionText.Location = new System.Drawing.Point(361, 245);
+            this.ComissionText.Location = new System.Drawing.Point(351, 245);
             this.ComissionText.Name = "ComissionText";
             this.ComissionText.Size = new System.Drawing.Size(160, 20);
-            this.ComissionText.TabIndex = 100;
+            this.ComissionText.TabIndex = 79;
             // 
             // Label19
             // 
             this.Label19.AutoSize = true;
             this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label19.Location = new System.Drawing.Point(262, 222);
+            this.Label19.Location = new System.Drawing.Point(252, 222);
             this.Label19.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label19.Name = "Label19";
             this.Label19.Size = new System.Drawing.Size(171, 17);
-            this.Label19.TabIndex = 99;
+            this.Label19.TabIndex = 102;
             this.Label19.Text = "Additional  Information";
             // 
             // Label18
             // 
             this.Label18.AutoSize = true;
-            this.Label18.Location = new System.Drawing.Point(279, 188);
+            this.Label18.Location = new System.Drawing.Point(269, 188);
             this.Label18.Name = "Label18";
             this.Label18.Size = new System.Drawing.Size(43, 13);
-            this.Label18.TabIndex = 98;
+            this.Label18.TabIndex = 101;
             this.Label18.Text = "Country";
             // 
             // CountryText
             // 
-            this.CountryText.Location = new System.Drawing.Point(361, 185);
+            this.CountryText.Location = new System.Drawing.Point(351, 185);
             this.CountryText.Name = "CountryText";
             this.CountryText.Size = new System.Drawing.Size(100, 20);
-            this.CountryText.TabIndex = 97;
+            this.CountryText.TabIndex = 78;
             // 
             // CityText
             // 
-            this.CityText.Location = new System.Drawing.Point(435, 159);
+            this.CityText.Location = new System.Drawing.Point(425, 159);
             this.CityText.Name = "CityText";
             this.CityText.Size = new System.Drawing.Size(86, 20);
-            this.CityText.TabIndex = 96;
+            this.CityText.TabIndex = 77;
             // 
             // Label16
             // 
             this.Label16.AutoSize = true;
             this.Label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label16.Location = new System.Drawing.Point(262, 9);
+            this.Label16.Location = new System.Drawing.Point(252, 9);
             this.Label16.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label16.Name = "Label16";
             this.Label16.Size = new System.Drawing.Size(153, 17);
-            this.Label16.TabIndex = 95;
+            this.Label16.TabIndex = 100;
             this.Label16.Text = "Delivery Information";
             // 
             // Label15
             // 
             this.Label15.AutoSize = true;
-            this.Label15.Location = new System.Drawing.Point(32, 274);
+            this.Label15.Location = new System.Drawing.Point(22, 274);
             this.Label15.Name = "Label15";
             this.Label15.Size = new System.Drawing.Size(38, 13);
-            this.Label15.TabIndex = 94;
+            this.Label15.TabIndex = 99;
             this.Label15.Text = "Phone";
             // 
             // PhoneText
             // 
-            this.PhoneText.Location = new System.Drawing.Point(107, 271);
+            this.PhoneText.Location = new System.Drawing.Point(97, 271);
             this.PhoneText.Name = "PhoneText";
             this.PhoneText.Size = new System.Drawing.Size(125, 20);
-            this.PhoneText.TabIndex = 93;
+            this.PhoneText.TabIndex = 68;
             // 
             // Label14
             // 
             this.Label14.AutoSize = true;
-            this.Label14.Location = new System.Drawing.Point(32, 300);
+            this.Label14.Location = new System.Drawing.Point(22, 300);
             this.Label14.Name = "Label14";
             this.Label14.Size = new System.Drawing.Size(26, 13);
-            this.Label14.TabIndex = 92;
+            this.Label14.TabIndex = 98;
             this.Label14.Text = "Mail";
             // 
             // MailText
             // 
-            this.MailText.Location = new System.Drawing.Point(107, 297);
+            this.MailText.Location = new System.Drawing.Point(97, 297);
             this.MailText.Name = "MailText";
             this.MailText.Size = new System.Drawing.Size(125, 20);
-            this.MailText.TabIndex = 91;
+            this.MailText.TabIndex = 69;
             // 
             // Label13
             // 
             this.Label13.AutoSize = true;
-            this.Label13.Location = new System.Drawing.Point(32, 248);
+            this.Label13.Location = new System.Drawing.Point(22, 248);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(58, 13);
-            this.Label13.TabIndex = 90;
+            this.Label13.TabIndex = 97;
             this.Label13.Text = "Last Name";
             // 
             // GenderComboBox
@@ -358,195 +360,195 @@ namespace CS
             this.GenderComboBox.Items.AddRange(new object[] {
             "1-Male",
             "2-Female"});
-            this.GenderComboBox.Location = new System.Drawing.Point(107, 192);
+            this.GenderComboBox.Location = new System.Drawing.Point(97, 192);
             this.GenderComboBox.Name = "GenderComboBox";
             this.GenderComboBox.Size = new System.Drawing.Size(100, 21);
-            this.GenderComboBox.TabIndex = 89;
+            this.GenderComboBox.TabIndex = 65;
             // 
             // Label12
             // 
             this.Label12.AutoSize = true;
             this.Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label12.Location = new System.Drawing.Point(12, 166);
+            this.Label12.Location = new System.Drawing.Point(2, 166);
             this.Label12.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(168, 17);
-            this.Label12.TabIndex = 88;
+            this.Label12.TabIndex = 96;
             this.Label12.Text = "Purchaser Information";
             // 
             // Label11
             // 
             this.Label11.AutoSize = true;
             this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(12, 88);
+            this.Label11.Location = new System.Drawing.Point(2, 88);
             this.Label11.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(66, 17);
-            this.Label11.TabIndex = 87;
+            this.Label11.TabIndex = 95;
             this.Label11.Text = "Account";
             // 
             // Label10
             // 
             this.Label10.AutoSize = true;
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(12, 9);
+            this.Label10.Location = new System.Drawing.Point(2, 9);
             this.Label10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(90, 17);
-            this.Label10.TabIndex = 86;
+            this.Label10.TabIndex = 94;
             this.Label10.Text = "Credentials";
             // 
             // Label9
             // 
             this.Label9.AutoSize = true;
-            this.Label9.Location = new System.Drawing.Point(279, 162);
+            this.Label9.Location = new System.Drawing.Point(269, 162);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(52, 13);
-            this.Label9.TabIndex = 85;
+            this.Label9.TabIndex = 93;
             this.Label9.Text = "ZIP / City";
             // 
             // Label8
             // 
             this.Label8.AutoSize = true;
-            this.Label8.Location = new System.Drawing.Point(279, 136);
+            this.Label8.Location = new System.Drawing.Point(269, 136);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(35, 13);
-            this.Label8.TabIndex = 84;
+            this.Label8.TabIndex = 92;
             this.Label8.Text = "Street";
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(279, 110);
+            this.Label7.Location = new System.Drawing.Point(269, 110);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(77, 13);
-            this.Label7.TabIndex = 83;
+            this.Label7.TabIndex = 91;
             this.Label7.Text = "Supplementary";
             // 
             // Label6
             // 
             this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(279, 84);
+            this.Label6.Location = new System.Drawing.Point(269, 84);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(54, 13);
-            this.Label6.TabIndex = 82;
+            this.Label6.TabIndex = 90;
             this.Label6.Text = "Address 2";
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(279, 58);
+            this.Label5.Location = new System.Drawing.Point(269, 58);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(54, 13);
-            this.Label5.TabIndex = 81;
+            this.Label5.TabIndex = 88;
             this.Label5.Text = "Address 1";
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(279, 32);
+            this.Label4.Location = new System.Drawing.Point(269, 32);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(54, 13);
-            this.Label4.TabIndex = 80;
+            this.Label4.TabIndex = 86;
             this.Label4.Text = "Salutation";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(32, 195);
+            this.Label3.Location = new System.Drawing.Point(22, 195);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(42, 13);
-            this.Label3.TabIndex = 79;
+            this.Label3.TabIndex = 84;
             this.Label3.Text = "Gender";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(32, 222);
+            this.Label2.Location = new System.Drawing.Point(22, 222);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(57, 13);
-            this.Label2.TabIndex = 78;
+            this.Label2.TabIndex = 83;
             this.Label2.Text = "First Name";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(32, 138);
+            this.Label1.Location = new System.Drawing.Point(22, 138);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(67, 13);
-            this.Label1.TabIndex = 77;
+            this.Label1.TabIndex = 80;
             this.Label1.Text = "Account-No.";
             // 
             // ZipText
             // 
-            this.ZipText.Location = new System.Drawing.Point(361, 159);
+            this.ZipText.Location = new System.Drawing.Point(351, 159);
             this.ZipText.Name = "ZipText";
             this.ZipText.Size = new System.Drawing.Size(54, 20);
             this.ZipText.TabIndex = 76;
             // 
             // StreetText
             // 
-            this.StreetText.Location = new System.Drawing.Point(361, 133);
+            this.StreetText.Location = new System.Drawing.Point(351, 133);
             this.StreetText.Name = "StreetText";
             this.StreetText.Size = new System.Drawing.Size(160, 20);
             this.StreetText.TabIndex = 75;
             // 
             // SupplementaryText
             // 
-            this.SupplementaryText.Location = new System.Drawing.Point(361, 107);
+            this.SupplementaryText.Location = new System.Drawing.Point(351, 107);
             this.SupplementaryText.Name = "SupplementaryText";
             this.SupplementaryText.Size = new System.Drawing.Size(160, 20);
             this.SupplementaryText.TabIndex = 74;
             // 
             // Address2Text
             // 
-            this.Address2Text.Location = new System.Drawing.Point(361, 81);
+            this.Address2Text.Location = new System.Drawing.Point(351, 81);
             this.Address2Text.Name = "Address2Text";
             this.Address2Text.Size = new System.Drawing.Size(160, 20);
             this.Address2Text.TabIndex = 73;
             // 
             // Address1Text
             // 
-            this.Address1Text.Location = new System.Drawing.Point(361, 55);
+            this.Address1Text.Location = new System.Drawing.Point(351, 55);
             this.Address1Text.Name = "Address1Text";
             this.Address1Text.Size = new System.Drawing.Size(160, 20);
             this.Address1Text.TabIndex = 72;
             // 
             // SaultationText
             // 
-            this.SaultationText.Location = new System.Drawing.Point(361, 29);
+            this.SaultationText.Location = new System.Drawing.Point(351, 29);
             this.SaultationText.Name = "SaultationText";
             this.SaultationText.Size = new System.Drawing.Size(160, 20);
             this.SaultationText.TabIndex = 71;
             // 
             // LastNameText
             // 
-            this.LastNameText.Location = new System.Drawing.Point(107, 245);
+            this.LastNameText.Location = new System.Drawing.Point(97, 245);
             this.LastNameText.Name = "LastNameText";
             this.LastNameText.Size = new System.Drawing.Size(125, 20);
-            this.LastNameText.TabIndex = 70;
+            this.LastNameText.TabIndex = 67;
             // 
             // FirstNameText
             // 
-            this.FirstNameText.Location = new System.Drawing.Point(107, 219);
+            this.FirstNameText.Location = new System.Drawing.Point(97, 219);
             this.FirstNameText.Name = "FirstNameText";
             this.FirstNameText.Size = new System.Drawing.Size(125, 20);
-            this.FirstNameText.TabIndex = 69;
+            this.FirstNameText.TabIndex = 66;
             // 
             // AccountNoText
             // 
-            this.AccountNoText.Location = new System.Drawing.Point(107, 135);
+            this.AccountNoText.Location = new System.Drawing.Point(97, 135);
             this.AccountNoText.Name = "AccountNoText";
             this.AccountNoText.Size = new System.Drawing.Size(100, 20);
-            this.AccountNoText.TabIndex = 68;
+            this.AccountNoText.TabIndex = 63;
             // 
             // LabelMandator
             // 
             this.LabelMandator.AutoSize = true;
-            this.LabelMandator.Location = new System.Drawing.Point(32, 111);
+            this.LabelMandator.Location = new System.Drawing.Point(22, 111);
             this.LabelMandator.Name = "LabelMandator";
             this.LabelMandator.Size = new System.Drawing.Size(52, 13);
-            this.LabelMandator.TabIndex = 67;
+            this.LabelMandator.TabIndex = 70;
             this.LabelMandator.Text = "Mandator";
             // 
             // MandatorComboBox
@@ -558,53 +560,53 @@ namespace CS
             "2",
             "3",
             "4"});
-            this.MandatorComboBox.Location = new System.Drawing.Point(107, 108);
+            this.MandatorComboBox.Location = new System.Drawing.Point(97, 108);
             this.MandatorComboBox.Name = "MandatorComboBox";
             this.MandatorComboBox.Size = new System.Drawing.Size(100, 21);
-            this.MandatorComboBox.TabIndex = 66;
+            this.MandatorComboBox.TabIndex = 61;
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(32, 58);
+            this.PasswordLabel.Location = new System.Drawing.Point(22, 58);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(53, 13);
-            this.PasswordLabel.TabIndex = 65;
+            this.PasswordLabel.TabIndex = 64;
             this.PasswordLabel.Text = "Password";
             // 
             // UsernameLabel
             // 
             this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.Location = new System.Drawing.Point(32, 32);
+            this.UsernameLabel.Location = new System.Drawing.Point(22, 32);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(55, 13);
-            this.UsernameLabel.TabIndex = 64;
+            this.UsernameLabel.TabIndex = 62;
             this.UsernameLabel.Text = "Username";
             // 
             // ArticlesTextBox
             // 
-            this.ArticlesTextBox.Location = new System.Drawing.Point(577, 29);
+            this.ArticlesTextBox.Location = new System.Drawing.Point(567, 29);
             this.ArticlesTextBox.Multiline = true;
             this.ArticlesTextBox.Name = "ArticlesTextBox";
             this.ArticlesTextBox.Size = new System.Drawing.Size(159, 288);
-            this.ArticlesTextBox.TabIndex = 63;
+            this.ArticlesTextBox.TabIndex = 85;
             this.ArticlesTextBox.Text = "01000200101;1\r\n01000200101;2\r\n01000200101;3\r\n01000200101;4\r\n01000200101;5";
             // 
             // PasswordText
             // 
-            this.PasswordText.Location = new System.Drawing.Point(107, 55);
+            this.PasswordText.Location = new System.Drawing.Point(97, 55);
             this.PasswordText.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
             this.PasswordText.Name = "PasswordText";
             this.PasswordText.PasswordChar = '*';
             this.PasswordText.Size = new System.Drawing.Size(100, 20);
-            this.PasswordText.TabIndex = 62;
+            this.PasswordText.TabIndex = 60;
             // 
             // UsernameText
             // 
-            this.UsernameText.Location = new System.Drawing.Point(107, 29);
+            this.UsernameText.Location = new System.Drawing.Point(97, 29);
             this.UsernameText.Name = "UsernameText";
             this.UsernameText.Size = new System.Drawing.Size(100, 20);
-            this.UsernameText.TabIndex = 61;
+            this.UsernameText.TabIndex = 59;
             // 
             // Order
             // 
@@ -669,8 +671,10 @@ namespace CS
             this.Controls.Add(this.ArticlesTextBox);
             this.Controls.Add(this.PasswordText);
             this.Controls.Add(this.UsernameText);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Order";
-            this.Text = "Form1";
+            this.Text = "Order";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -738,4 +742,3 @@ namespace CS
         internal System.Windows.Forms.TextBox UsernameText;
     }
 }
-

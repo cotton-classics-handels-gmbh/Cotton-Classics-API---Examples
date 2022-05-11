@@ -97,7 +97,7 @@ Partial Class Order
         Me.ArticlesTextBox.Multiline = True
         Me.ArticlesTextBox.Name = "ArticlesTextBox"
         Me.ArticlesTextBox.Size = New System.Drawing.Size(159, 288)
-        Me.ArticlesTextBox.TabIndex = 2
+        Me.ArticlesTextBox.TabIndex = 20
         Me.ArticlesTextBox.Text = "01000200101;1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "01000200101;2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "01000200101;3" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "01000200101;4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "01000200101;5"
         '
         'UsernameLabel
@@ -248,7 +248,7 @@ Partial Class Order
         Me.GenderComboBox.Location = New System.Drawing.Point(107, 192)
         Me.GenderComboBox.Name = "GenderComboBox"
         Me.GenderComboBox.Size = New System.Drawing.Size(100, 21)
-        Me.GenderComboBox.TabIndex = 30
+        Me.GenderComboBox.TabIndex = 4
         '
         'Label13
         '
@@ -274,7 +274,7 @@ Partial Class Order
         Me.MailText.Location = New System.Drawing.Point(107, 297)
         Me.MailText.Name = "MailText"
         Me.MailText.Size = New System.Drawing.Size(125, 20)
-        Me.MailText.TabIndex = 32
+        Me.MailText.TabIndex = 8
         Me.MailText.Text = Global.VB.My.MySettings.Default.Mail
         '
         'Label15
@@ -460,7 +460,7 @@ Partial Class Order
         Me.SendButton.Location = New System.Drawing.Point(661, 330)
         Me.SendButton.Name = "SendButton"
         Me.SendButton.Size = New System.Drawing.Size(75, 23)
-        Me.SendButton.TabIndex = 59
+        Me.SendButton.TabIndex = 22
         Me.SendButton.Text = "Send Order"
         Me.SendButton.UseVisualStyleBackColor = True
         '
@@ -469,7 +469,7 @@ Partial Class Order
         Me.JSONButton.Location = New System.Drawing.Point(553, 330)
         Me.JSONButton.Name = "JSONButton"
         Me.JSONButton.Size = New System.Drawing.Size(102, 23)
-        Me.JSONButton.TabIndex = 60
+        Me.JSONButton.TabIndex = 21
         Me.JSONButton.Text = "Preview JSON"
         Me.JSONButton.UseVisualStyleBackColor = True
         '
@@ -481,7 +481,7 @@ Partial Class Order
         Me.MandatorComboBox.Location = New System.Drawing.Point(107, 108)
         Me.MandatorComboBox.Name = "MandatorComboBox"
         Me.MandatorComboBox.Size = New System.Drawing.Size(100, 21)
-        Me.MandatorComboBox.TabIndex = 7
+        Me.MandatorComboBox.TabIndex = 2
         '
         'CommentText
         '
@@ -489,7 +489,7 @@ Partial Class Order
         Me.CommentText.Location = New System.Drawing.Point(361, 297)
         Me.CommentText.Name = "CommentText"
         Me.CommentText.Size = New System.Drawing.Size(160, 20)
-        Me.CommentText.TabIndex = 46
+        Me.CommentText.TabIndex = 19
         Me.CommentText.Text = Global.VB.My.MySettings.Default.Comment
         '
         'ReferenceText
@@ -498,7 +498,7 @@ Partial Class Order
         Me.ReferenceText.Location = New System.Drawing.Point(361, 271)
         Me.ReferenceText.Name = "ReferenceText"
         Me.ReferenceText.Size = New System.Drawing.Size(160, 20)
-        Me.ReferenceText.TabIndex = 44
+        Me.ReferenceText.TabIndex = 18
         Me.ReferenceText.Text = Global.VB.My.MySettings.Default.Reference
         '
         'ComissionText
@@ -507,7 +507,7 @@ Partial Class Order
         Me.ComissionText.Location = New System.Drawing.Point(361, 245)
         Me.ComissionText.Name = "ComissionText"
         Me.ComissionText.Size = New System.Drawing.Size(160, 20)
-        Me.ComissionText.TabIndex = 42
+        Me.ComissionText.TabIndex = 17
         Me.ComissionText.Text = Global.VB.My.MySettings.Default.Comission
         '
         'CountryText
@@ -516,7 +516,7 @@ Partial Class Order
         Me.CountryText.Location = New System.Drawing.Point(361, 185)
         Me.CountryText.Name = "CountryText"
         Me.CountryText.Size = New System.Drawing.Size(100, 20)
-        Me.CountryText.TabIndex = 39
+        Me.CountryText.TabIndex = 16
         Me.CountryText.Text = Global.VB.My.MySettings.Default.Country
         '
         'CityText
@@ -525,7 +525,7 @@ Partial Class Order
         Me.CityText.Location = New System.Drawing.Point(435, 159)
         Me.CityText.Name = "CityText"
         Me.CityText.Size = New System.Drawing.Size(86, 20)
-        Me.CityText.TabIndex = 37
+        Me.CityText.TabIndex = 15
         Me.CityText.Text = Global.VB.My.MySettings.Default.City
         '
         'PhoneText
@@ -534,7 +534,7 @@ Partial Class Order
         Me.PhoneText.Location = New System.Drawing.Point(107, 271)
         Me.PhoneText.Name = "PhoneText"
         Me.PhoneText.Size = New System.Drawing.Size(125, 20)
-        Me.PhoneText.TabIndex = 34
+        Me.PhoneText.TabIndex = 7
         Me.PhoneText.Text = Global.VB.My.MySettings.Default.Phone
         '
         'ZipText
@@ -543,7 +543,7 @@ Partial Class Order
         Me.ZipText.Location = New System.Drawing.Point(361, 159)
         Me.ZipText.Name = "ZipText"
         Me.ZipText.Size = New System.Drawing.Size(54, 20)
-        Me.ZipText.TabIndex = 17
+        Me.ZipText.TabIndex = 14
         Me.ZipText.Text = Global.VB.My.MySettings.Default.Zip
         '
         'StreetText
@@ -552,7 +552,7 @@ Partial Class Order
         Me.StreetText.Location = New System.Drawing.Point(361, 133)
         Me.StreetText.Name = "StreetText"
         Me.StreetText.Size = New System.Drawing.Size(160, 20)
-        Me.StreetText.TabIndex = 16
+        Me.StreetText.TabIndex = 13
         Me.StreetText.Text = Global.VB.My.MySettings.Default.Street
         '
         'SupplementaryText
@@ -561,7 +561,7 @@ Partial Class Order
         Me.SupplementaryText.Location = New System.Drawing.Point(361, 107)
         Me.SupplementaryText.Name = "SupplementaryText"
         Me.SupplementaryText.Size = New System.Drawing.Size(160, 20)
-        Me.SupplementaryText.TabIndex = 15
+        Me.SupplementaryText.TabIndex = 12
         Me.SupplementaryText.Text = Global.VB.My.MySettings.Default.Supplementary
         '
         'Address2Text
@@ -570,7 +570,7 @@ Partial Class Order
         Me.Address2Text.Location = New System.Drawing.Point(361, 81)
         Me.Address2Text.Name = "Address2Text"
         Me.Address2Text.Size = New System.Drawing.Size(160, 20)
-        Me.Address2Text.TabIndex = 14
+        Me.Address2Text.TabIndex = 11
         Me.Address2Text.Text = Global.VB.My.MySettings.Default.Address2
         '
         'Address1Text
@@ -579,7 +579,7 @@ Partial Class Order
         Me.Address1Text.Location = New System.Drawing.Point(361, 55)
         Me.Address1Text.Name = "Address1Text"
         Me.Address1Text.Size = New System.Drawing.Size(160, 20)
-        Me.Address1Text.TabIndex = 13
+        Me.Address1Text.TabIndex = 10
         Me.Address1Text.Text = Global.VB.My.MySettings.Default.Address1
         '
         'SaultationText
@@ -588,7 +588,7 @@ Partial Class Order
         Me.SaultationText.Location = New System.Drawing.Point(361, 29)
         Me.SaultationText.Name = "SaultationText"
         Me.SaultationText.Size = New System.Drawing.Size(160, 20)
-        Me.SaultationText.TabIndex = 12
+        Me.SaultationText.TabIndex = 9
         Me.SaultationText.Text = Global.VB.My.MySettings.Default.Salutation
         '
         'LastNameText
@@ -597,7 +597,7 @@ Partial Class Order
         Me.LastNameText.Location = New System.Drawing.Point(107, 245)
         Me.LastNameText.Name = "LastNameText"
         Me.LastNameText.Size = New System.Drawing.Size(125, 20)
-        Me.LastNameText.TabIndex = 11
+        Me.LastNameText.TabIndex = 6
         Me.LastNameText.Text = Global.VB.My.MySettings.Default.LastName
         '
         'FirstNameText
@@ -606,7 +606,7 @@ Partial Class Order
         Me.FirstNameText.Location = New System.Drawing.Point(107, 219)
         Me.FirstNameText.Name = "FirstNameText"
         Me.FirstNameText.Size = New System.Drawing.Size(125, 20)
-        Me.FirstNameText.TabIndex = 10
+        Me.FirstNameText.TabIndex = 5
         Me.FirstNameText.Text = Global.VB.My.MySettings.Default.FirstName
         '
         'AccountNoText
@@ -615,7 +615,7 @@ Partial Class Order
         Me.AccountNoText.Location = New System.Drawing.Point(107, 135)
         Me.AccountNoText.Name = "AccountNoText"
         Me.AccountNoText.Size = New System.Drawing.Size(100, 20)
-        Me.AccountNoText.TabIndex = 9
+        Me.AccountNoText.TabIndex = 3
         Me.AccountNoText.Text = Global.VB.My.MySettings.Default.AccountNo
         '
         'UsernameText
@@ -690,6 +690,8 @@ Partial Class Order
         Me.Controls.Add(Me.ArticlesTextBox)
         Me.Controls.Add(Me.PasswordText)
         Me.Controls.Add(Me.UsernameText)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Order"
         Me.Text = "Place Order example"
         Me.ResumeLayout(False)

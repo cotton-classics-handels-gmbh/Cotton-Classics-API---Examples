@@ -16,7 +16,7 @@ namespace CS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Order());
+            Application.Run(new Main());
         }
     }
 }

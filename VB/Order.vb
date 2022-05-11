@@ -1,30 +1,33 @@
 ﻿Imports System.IO
+Imports System.Net
+Imports Newtonsoft.Json
+Imports CC.CustomerAPIData.Order
 
 Public Class Order
 
-    Private Const apiURL As String = "https://api.cottonclassics.com/api/Order"
+    Private Const apiURL As String = "https://localhost:44339/api/Order"
 
     Private Sub SendButton_Click(sender As Object, e As EventArgs) Handles SendButton.Click
 
         Try
             'Generation the request Data trough the help
             'of the CC.CustomerAPIData assembly
-            Dim requestObject = GenerateRequest()
-
-            'Converting the computed JSON to a Byte
-            'array.
-            Dim requestStream As Byte() = System.Text.Encoding.UTF8.GetBytes(requestObject.GetJSON)
+            Dim orderRequest = GenerateRequest()
 
             'Setting up the Credidentials for the Server
-            Dim credidentials As New Net.CredentialCache From {
-                {New Uri(apiURL), "Basic", New Net.NetworkCredential(UsernameText.Text,
-                                                                                 PasswordText.Text)}
+            Dim credidentials As New CredentialCache From {
+                {New Uri(apiURL), "Basic", New NetworkCredential(UsernameText.Text,
+                                                                 PasswordText.Text)}
             }
+
+            'Converting the computed JSON to a Byte array.
+            Dim requestStream As Byte() = System.Text.Encoding.UTF8.GetBytes(orderRequest.GetJSON(Formatting.None))
 
             'Setting up the Web Request
             Dim webRequest = Net.WebRequest.CreateHttp(apiURL)
             With webRequest
                 .Method = "POST"
+
                 .ContentType = "application/json"
                 .ContentLength = requestStream.Length
                 .UserAgent = "Order Test App"
@@ -37,22 +40,53 @@ Public Class Order
             httpStream.Write(requestStream, 0, requestStream.Length)
             httpStream.Close()
 
-            'Parsing the Response
-            Dim response = webRequest.GetResponse
+            'Requesting the Response from the Server
+            Using httpResponse As HttpWebResponse = webRequest.GetResponse
+                'We read the received Response with the help of  an memory stream
+                'to a string
+                Dim responseStream = httpResponse.GetResponseStream
+                Dim reader As New StreamReader(responseStream)
+                Dim responseString = reader.ReadToEnd
 
-            If response.ContentType = "application/json" Then
-                'We read the Response to an memory stream..
-                Dim stream = response.GetResponseStream
+                'If the Status equals 200 - and the content type is JSON
+                'we should have correct response data at hand
+                If httpResponse.ContentType = "application/json" And
+                    httpResponse.StatusCode = HttpStatusCode.OK Then
 
+                    'If you want to use our helper assembly you may now try to desialize it
+                    'using newtonsoft JSON:
+                    Dim result = JsonConvert.DeserializeObject(responseString, GetType(OrderResponse))
+
+                    '.. but for this example we will just display the JSON Raw Data in another Form
+                    Dim form As New JsonPreview(responseString)
+                    form.Show()
+                Else
+                    'If somethings fishy we throw an rather generic exception..
+                    Throw New Exception(String.Format("Invalid Data, Content: {0}, StatusCode: {1}",
+                                                      httpResponse.ContentType, httpResponse.StatusCode))
+                End If
+            End Using
+
+        Catch exWeb As WebException
+            'in case we are receiving an web exception with an
+            'application/json content we can expect an detailed
+            'errormessage from the webserver
+            If exWeb.Response.ContentType = "application/json" Then
+                Dim stream = exWeb.Response.GetResponseStream
                 Dim reader As New StreamReader(stream)
                 Dim responseData = reader.ReadToEnd
 
-                '.. and display the results in another form
+                'Again: You may use our helper assembly against
+                'the returned data
+                Dim result = JsonConvert.DeserializeObject(responseData, GetType(CC.CustomerAPIData.ErrorResponse))
+
+                '.. or just use the String
                 Dim form As New JsonPreview(responseData)
                 form.Show()
             Else
-                response.Close()
-                Throw New Exception("Unexpected Response Content: " & response.ContentType)
+                'All regular Webexceptions will be displayed in
+                'an MessageBox
+                MsgBox(exWeb.Message)
             End If
 
         Catch ex As Exception
@@ -65,7 +99,7 @@ Public Class Order
 
         Try
             Dim request = GenerateRequest()
-            Dim json = request.GetJSON
+            Dim json = request.GetJSON(Formatting.Indented)
 
             Dim form As New JsonPreview(json)
 
@@ -77,10 +111,9 @@ Public Class Order
 
     End Sub
 
-    Private Function GenerateRequest() As CC.CustomerAPIData.Order.OrderRequest
+    Private Function GenerateRequest() As OrderRequest
 
-
-        Dim request As New CC.CustomerAPIData.Order.OrderRequest
+        Dim request As New OrderRequest
 
         With request
             'Account
@@ -124,6 +157,4 @@ Public Class Order
 
         Return request
     End Function
-
-
 End Class

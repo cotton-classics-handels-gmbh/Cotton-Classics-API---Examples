@@ -203,6 +203,8 @@ Partial Class OrderStatus
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.PasswordText)
         Me.Controls.Add(Me.UsernameText)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "OrderStatus"
         Me.Text = "OrderStatus"
         Me.ResumeLayout(False)
