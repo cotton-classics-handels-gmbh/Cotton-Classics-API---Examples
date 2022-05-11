@@ -54,6 +54,7 @@ namespace CS
             this.SendQuery.TabIndex = 80;
             this.SendQuery.Text = "Send Query";
             this.SendQuery.UseVisualStyleBackColor = true;
+            this.SendQuery.Click += new System.EventHandler(this.SendQuery_Click);
             // 
             // Label26
             // 
@@ -97,10 +98,12 @@ namespace CS
             // 
             // ProcessIDText
             // 
+            this.ProcessIDText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "ProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.ProcessIDText.Location = new System.Drawing.Point(107, 134);
             this.ProcessIDText.Name = "ProcessIDText";
             this.ProcessIDText.Size = new System.Drawing.Size(100, 20);
             this.ProcessIDText.TabIndex = 75;
+            this.ProcessIDText.Text = global::CS.Properties.Settings.Default.ProcessID;
             // 
             // LabelMandator
             // 
@@ -185,10 +188,12 @@ namespace CS
             // 
             // UsernameText
             // 
+            this.UsernameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Username", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.UsernameText.Location = new System.Drawing.Point(107, 29);
             this.UsernameText.Name = "UsernameText";
             this.UsernameText.Size = new System.Drawing.Size(100, 20);
             this.UsernameText.TabIndex = 66;
+            this.UsernameText.Text = global::CS.Properties.Settings.Default.Username;
             // 
             // OrderStatus
             // 
@@ -214,6 +219,7 @@ namespace CS
             this.MinimizeBox = false;
             this.Name = "OrderStatus";
             this.Text = "OrderStatus";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderStatus_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

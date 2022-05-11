@@ -43,20 +43,13 @@ namespace CS
             this.Label23 = new System.Windows.Forms.Label();
             this.Label17 = new System.Windows.Forms.Label();
             this.Label20 = new System.Windows.Forms.Label();
-            this.CommentText = new System.Windows.Forms.TextBox();
             this.Label21 = new System.Windows.Forms.Label();
-            this.ReferenceText = new System.Windows.Forms.TextBox();
             this.Label22 = new System.Windows.Forms.Label();
-            this.ComissionText = new System.Windows.Forms.TextBox();
             this.Label19 = new System.Windows.Forms.Label();
             this.Label18 = new System.Windows.Forms.Label();
-            this.CountryText = new System.Windows.Forms.TextBox();
-            this.CityText = new System.Windows.Forms.TextBox();
             this.Label16 = new System.Windows.Forms.Label();
             this.Label15 = new System.Windows.Forms.Label();
-            this.PhoneText = new System.Windows.Forms.TextBox();
             this.Label14 = new System.Windows.Forms.Label();
-            this.MailText = new System.Windows.Forms.TextBox();
             this.Label13 = new System.Windows.Forms.Label();
             this.GenderComboBox = new System.Windows.Forms.ComboBox();
             this.Label12 = new System.Windows.Forms.Label();
@@ -71,6 +64,19 @@ namespace CS
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
+            this.LabelMandator = new System.Windows.Forms.Label();
+            this.MandatorComboBox = new System.Windows.Forms.ComboBox();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.ArticlesTextBox = new System.Windows.Forms.TextBox();
+            this.PasswordText = new System.Windows.Forms.MaskedTextBox();
+            this.CommentText = new System.Windows.Forms.TextBox();
+            this.ReferenceText = new System.Windows.Forms.TextBox();
+            this.ComissionText = new System.Windows.Forms.TextBox();
+            this.CountryText = new System.Windows.Forms.TextBox();
+            this.CityText = new System.Windows.Forms.TextBox();
+            this.PhoneText = new System.Windows.Forms.TextBox();
+            this.MailText = new System.Windows.Forms.TextBox();
             this.ZipText = new System.Windows.Forms.TextBox();
             this.StreetText = new System.Windows.Forms.TextBox();
             this.SupplementaryText = new System.Windows.Forms.TextBox();
@@ -80,12 +86,6 @@ namespace CS
             this.LastNameText = new System.Windows.Forms.TextBox();
             this.FirstNameText = new System.Windows.Forms.TextBox();
             this.AccountNoText = new System.Windows.Forms.TextBox();
-            this.LabelMandator = new System.Windows.Forms.Label();
-            this.MandatorComboBox = new System.Windows.Forms.ComboBox();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.UsernameLabel = new System.Windows.Forms.Label();
-            this.ArticlesTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordText = new System.Windows.Forms.MaskedTextBox();
             this.UsernameText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -229,13 +229,6 @@ namespace CS
             this.Label20.TabIndex = 105;
             this.Label20.Text = "Comment";
             // 
-            // CommentText
-            // 
-            this.CommentText.Location = new System.Drawing.Point(351, 297);
-            this.CommentText.Name = "CommentText";
-            this.CommentText.Size = new System.Drawing.Size(160, 20);
-            this.CommentText.TabIndex = 82;
-            // 
             // Label21
             // 
             this.Label21.AutoSize = true;
@@ -245,13 +238,6 @@ namespace CS
             this.Label21.TabIndex = 104;
             this.Label21.Text = "Your Reference";
             // 
-            // ReferenceText
-            // 
-            this.ReferenceText.Location = new System.Drawing.Point(351, 271);
-            this.ReferenceText.Name = "ReferenceText";
-            this.ReferenceText.Size = new System.Drawing.Size(160, 20);
-            this.ReferenceText.TabIndex = 81;
-            // 
             // Label22
             // 
             this.Label22.AutoSize = true;
@@ -260,13 +246,6 @@ namespace CS
             this.Label22.Size = new System.Drawing.Size(54, 13);
             this.Label22.TabIndex = 103;
             this.Label22.Text = "Comission";
-            // 
-            // ComissionText
-            // 
-            this.ComissionText.Location = new System.Drawing.Point(351, 245);
-            this.ComissionText.Name = "ComissionText";
-            this.ComissionText.Size = new System.Drawing.Size(160, 20);
-            this.ComissionText.TabIndex = 79;
             // 
             // Label19
             // 
@@ -288,20 +267,6 @@ namespace CS
             this.Label18.TabIndex = 101;
             this.Label18.Text = "Country";
             // 
-            // CountryText
-            // 
-            this.CountryText.Location = new System.Drawing.Point(351, 185);
-            this.CountryText.Name = "CountryText";
-            this.CountryText.Size = new System.Drawing.Size(100, 20);
-            this.CountryText.TabIndex = 78;
-            // 
-            // CityText
-            // 
-            this.CityText.Location = new System.Drawing.Point(425, 159);
-            this.CityText.Name = "CityText";
-            this.CityText.Size = new System.Drawing.Size(86, 20);
-            this.CityText.TabIndex = 77;
-            // 
             // Label16
             // 
             this.Label16.AutoSize = true;
@@ -322,13 +287,6 @@ namespace CS
             this.Label15.TabIndex = 99;
             this.Label15.Text = "Phone";
             // 
-            // PhoneText
-            // 
-            this.PhoneText.Location = new System.Drawing.Point(97, 271);
-            this.PhoneText.Name = "PhoneText";
-            this.PhoneText.Size = new System.Drawing.Size(125, 20);
-            this.PhoneText.TabIndex = 68;
-            // 
             // Label14
             // 
             this.Label14.AutoSize = true;
@@ -337,13 +295,6 @@ namespace CS
             this.Label14.Size = new System.Drawing.Size(26, 13);
             this.Label14.TabIndex = 98;
             this.Label14.Text = "Mail";
-            // 
-            // MailText
-            // 
-            this.MailText.Location = new System.Drawing.Point(97, 297);
-            this.MailText.Name = "MailText";
-            this.MailText.Size = new System.Drawing.Size(125, 20);
-            this.MailText.TabIndex = 69;
             // 
             // Label13
             // 
@@ -479,69 +430,6 @@ namespace CS
             this.Label1.TabIndex = 80;
             this.Label1.Text = "Account-No.";
             // 
-            // ZipText
-            // 
-            this.ZipText.Location = new System.Drawing.Point(351, 159);
-            this.ZipText.Name = "ZipText";
-            this.ZipText.Size = new System.Drawing.Size(54, 20);
-            this.ZipText.TabIndex = 76;
-            // 
-            // StreetText
-            // 
-            this.StreetText.Location = new System.Drawing.Point(351, 133);
-            this.StreetText.Name = "StreetText";
-            this.StreetText.Size = new System.Drawing.Size(160, 20);
-            this.StreetText.TabIndex = 75;
-            // 
-            // SupplementaryText
-            // 
-            this.SupplementaryText.Location = new System.Drawing.Point(351, 107);
-            this.SupplementaryText.Name = "SupplementaryText";
-            this.SupplementaryText.Size = new System.Drawing.Size(160, 20);
-            this.SupplementaryText.TabIndex = 74;
-            // 
-            // Address2Text
-            // 
-            this.Address2Text.Location = new System.Drawing.Point(351, 81);
-            this.Address2Text.Name = "Address2Text";
-            this.Address2Text.Size = new System.Drawing.Size(160, 20);
-            this.Address2Text.TabIndex = 73;
-            // 
-            // Address1Text
-            // 
-            this.Address1Text.Location = new System.Drawing.Point(351, 55);
-            this.Address1Text.Name = "Address1Text";
-            this.Address1Text.Size = new System.Drawing.Size(160, 20);
-            this.Address1Text.TabIndex = 72;
-            // 
-            // SaultationText
-            // 
-            this.SaultationText.Location = new System.Drawing.Point(351, 29);
-            this.SaultationText.Name = "SaultationText";
-            this.SaultationText.Size = new System.Drawing.Size(160, 20);
-            this.SaultationText.TabIndex = 71;
-            // 
-            // LastNameText
-            // 
-            this.LastNameText.Location = new System.Drawing.Point(97, 245);
-            this.LastNameText.Name = "LastNameText";
-            this.LastNameText.Size = new System.Drawing.Size(125, 20);
-            this.LastNameText.TabIndex = 67;
-            // 
-            // FirstNameText
-            // 
-            this.FirstNameText.Location = new System.Drawing.Point(97, 219);
-            this.FirstNameText.Name = "FirstNameText";
-            this.FirstNameText.Size = new System.Drawing.Size(125, 20);
-            this.FirstNameText.TabIndex = 66;
-            // 
-            // AccountNoText
-            // 
-            this.AccountNoText.Location = new System.Drawing.Point(97, 135);
-            this.AccountNoText.Name = "AccountNoText";
-            this.AccountNoText.Size = new System.Drawing.Size(100, 20);
-            this.AccountNoText.TabIndex = 63;
-            // 
             // LabelMandator
             // 
             this.LabelMandator.AutoSize = true;
@@ -601,12 +489,158 @@ namespace CS
             this.PasswordText.Size = new System.Drawing.Size(100, 20);
             this.PasswordText.TabIndex = 60;
             // 
+            // CommentText
+            // 
+            this.CommentText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Comment", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.CommentText.Location = new System.Drawing.Point(351, 297);
+            this.CommentText.Name = "CommentText";
+            this.CommentText.Size = new System.Drawing.Size(160, 20);
+            this.CommentText.TabIndex = 82;
+            this.CommentText.Text = global::CS.Properties.Settings.Default.Comment;
+            // 
+            // ReferenceText
+            // 
+            this.ReferenceText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Reference", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ReferenceText.Location = new System.Drawing.Point(351, 271);
+            this.ReferenceText.Name = "ReferenceText";
+            this.ReferenceText.Size = new System.Drawing.Size(160, 20);
+            this.ReferenceText.TabIndex = 81;
+            this.ReferenceText.Text = global::CS.Properties.Settings.Default.Reference;
+            // 
+            // ComissionText
+            // 
+            this.ComissionText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Comission", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ComissionText.Location = new System.Drawing.Point(351, 245);
+            this.ComissionText.Name = "ComissionText";
+            this.ComissionText.Size = new System.Drawing.Size(160, 20);
+            this.ComissionText.TabIndex = 79;
+            this.ComissionText.Text = global::CS.Properties.Settings.Default.Comission;
+            // 
+            // CountryText
+            // 
+            this.CountryText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Country", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.CountryText.Location = new System.Drawing.Point(351, 185);
+            this.CountryText.Name = "CountryText";
+            this.CountryText.Size = new System.Drawing.Size(100, 20);
+            this.CountryText.TabIndex = 78;
+            this.CountryText.Text = global::CS.Properties.Settings.Default.Country;
+            // 
+            // CityText
+            // 
+            this.CityText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "City", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.CityText.Location = new System.Drawing.Point(425, 159);
+            this.CityText.Name = "CityText";
+            this.CityText.Size = new System.Drawing.Size(86, 20);
+            this.CityText.TabIndex = 77;
+            this.CityText.Text = global::CS.Properties.Settings.Default.City;
+            // 
+            // PhoneText
+            // 
+            this.PhoneText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Phone", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.PhoneText.Location = new System.Drawing.Point(97, 271);
+            this.PhoneText.Name = "PhoneText";
+            this.PhoneText.Size = new System.Drawing.Size(125, 20);
+            this.PhoneText.TabIndex = 68;
+            this.PhoneText.Text = global::CS.Properties.Settings.Default.Phone;
+            // 
+            // MailText
+            // 
+            this.MailText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Mail", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.MailText.Location = new System.Drawing.Point(97, 297);
+            this.MailText.Name = "MailText";
+            this.MailText.Size = new System.Drawing.Size(125, 20);
+            this.MailText.TabIndex = 69;
+            this.MailText.Text = global::CS.Properties.Settings.Default.Mail;
+            // 
+            // ZipText
+            // 
+            this.ZipText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Zip", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ZipText.Location = new System.Drawing.Point(351, 159);
+            this.ZipText.Name = "ZipText";
+            this.ZipText.Size = new System.Drawing.Size(54, 20);
+            this.ZipText.TabIndex = 76;
+            this.ZipText.Text = global::CS.Properties.Settings.Default.Zip;
+            // 
+            // StreetText
+            // 
+            this.StreetText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Street", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.StreetText.Location = new System.Drawing.Point(351, 133);
+            this.StreetText.Name = "StreetText";
+            this.StreetText.Size = new System.Drawing.Size(160, 20);
+            this.StreetText.TabIndex = 75;
+            this.StreetText.Text = global::CS.Properties.Settings.Default.Street;
+            // 
+            // SupplementaryText
+            // 
+            this.SupplementaryText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Supplementary", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.SupplementaryText.Location = new System.Drawing.Point(351, 107);
+            this.SupplementaryText.Name = "SupplementaryText";
+            this.SupplementaryText.Size = new System.Drawing.Size(160, 20);
+            this.SupplementaryText.TabIndex = 74;
+            this.SupplementaryText.Text = global::CS.Properties.Settings.Default.Supplementary;
+            // 
+            // Address2Text
+            // 
+            this.Address2Text.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Address2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Address2Text.Location = new System.Drawing.Point(351, 81);
+            this.Address2Text.Name = "Address2Text";
+            this.Address2Text.Size = new System.Drawing.Size(160, 20);
+            this.Address2Text.TabIndex = 73;
+            this.Address2Text.Text = global::CS.Properties.Settings.Default.Address2;
+            // 
+            // Address1Text
+            // 
+            this.Address1Text.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Address1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Address1Text.Location = new System.Drawing.Point(351, 55);
+            this.Address1Text.Name = "Address1Text";
+            this.Address1Text.Size = new System.Drawing.Size(160, 20);
+            this.Address1Text.TabIndex = 72;
+            this.Address1Text.Text = global::CS.Properties.Settings.Default.Address1;
+            // 
+            // SaultationText
+            // 
+            this.SaultationText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Salutation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.SaultationText.Location = new System.Drawing.Point(351, 29);
+            this.SaultationText.Name = "SaultationText";
+            this.SaultationText.Size = new System.Drawing.Size(160, 20);
+            this.SaultationText.TabIndex = 71;
+            this.SaultationText.Text = global::CS.Properties.Settings.Default.Salutation;
+            // 
+            // LastNameText
+            // 
+            this.LastNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "LastName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.LastNameText.Location = new System.Drawing.Point(97, 245);
+            this.LastNameText.Name = "LastNameText";
+            this.LastNameText.Size = new System.Drawing.Size(125, 20);
+            this.LastNameText.TabIndex = 67;
+            this.LastNameText.Text = global::CS.Properties.Settings.Default.LastName;
+            // 
+            // FirstNameText
+            // 
+            this.FirstNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "FirstName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.FirstNameText.Location = new System.Drawing.Point(97, 219);
+            this.FirstNameText.Name = "FirstNameText";
+            this.FirstNameText.Size = new System.Drawing.Size(125, 20);
+            this.FirstNameText.TabIndex = 66;
+            this.FirstNameText.Text = global::CS.Properties.Settings.Default.FirstName;
+            // 
+            // AccountNoText
+            // 
+            this.AccountNoText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "AccountNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.AccountNoText.Location = new System.Drawing.Point(97, 135);
+            this.AccountNoText.Name = "AccountNoText";
+            this.AccountNoText.Size = new System.Drawing.Size(100, 20);
+            this.AccountNoText.TabIndex = 63;
+            this.AccountNoText.Text = global::CS.Properties.Settings.Default.AccountNo;
+            // 
             // UsernameText
             // 
+            this.UsernameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::CS.Properties.Settings.Default, "Username", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.UsernameText.Location = new System.Drawing.Point(97, 29);
             this.UsernameText.Name = "UsernameText";
             this.UsernameText.Size = new System.Drawing.Size(100, 20);
             this.UsernameText.TabIndex = 59;
+            this.UsernameText.Text = global::CS.Properties.Settings.Default.Username;
             // 
             // Order
             // 
@@ -675,6 +709,7 @@ namespace CS
             this.MinimizeBox = false;
             this.Name = "Order";
             this.Text = "Order";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Order_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

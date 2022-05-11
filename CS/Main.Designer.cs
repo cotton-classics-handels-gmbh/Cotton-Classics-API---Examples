@@ -41,6 +41,7 @@ namespace CS
             this.ButtonStatus.TabIndex = 3;
             this.ButtonStatus.Text = "Request Order Status";
             this.ButtonStatus.UseVisualStyleBackColor = true;
+            this.ButtonStatus.Click += new System.EventHandler(this.ButtonStatus_Click);
             // 
             // ButtonOrder
             // 

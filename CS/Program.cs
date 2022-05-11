@@ -17,6 +17,9 @@ namespace CS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
+
+            Main form = new Main();
+            form.Show();
         }
     }
 }

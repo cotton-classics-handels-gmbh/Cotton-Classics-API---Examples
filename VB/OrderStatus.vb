@@ -71,7 +71,9 @@ Public Class OrderStatus
             'in case we are receiving an web exception with an
             'application/json content we can expect an detailed
             'errormessage from the webserver
-            If exWeb.Response.ContentType = "application/json" Then
+            If exWeb.Response IsNot Nothing AndAlso
+                exWeb.Response.ContentType = "application/json" Then
+
                 Dim stream = exWeb.Response.GetResponseStream
                 Dim reader As New StreamReader(stream)
                 Dim responseData = reader.ReadToEnd
