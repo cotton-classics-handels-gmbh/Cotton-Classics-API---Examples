@@ -5,7 +5,7 @@ Imports Newtonsoft.Json
 
 Public Class OrderStatus
 
-    Private Const apiUrl As String = "https://localhost:44339/api/Order"
+    Private Const apiUrl As String = "https://api.cottonclassics.com/api/Order"
 
     Private Sub SendQuery_Click(sender As Object, e As EventArgs) Handles SendQuery.Click
 

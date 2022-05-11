@@ -17,7 +17,7 @@ namespace CS
     public partial class Order : Form
     {
 
-        private const string apiURL = "https://localhost:44339/api/Order";
+        private const string apiURL = "https://api.cottonclassics.com/api/Order";
 
         public Order()
         {

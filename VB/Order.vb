@@ -5,7 +5,7 @@ Imports CC.CustomerAPIData.Order
 
 Public Class Order
 
-    Private Const apiURL As String = "https://localhost:44339/api/Order"
+    Private Const apiURL As String = "https://api.cottonclassics.com/api/Order"
 
     Private Sub SendButton_Click(sender As Object, e As EventArgs) Handles SendButton.Click
 
