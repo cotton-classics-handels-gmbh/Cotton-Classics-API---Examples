@@ -1,0 +1,15 @@
+{
+  "name": "Cotton Classics/ Demo API",
+  "type": "project",
+  "description": "Sample API Client.",
+  "keywords": [ "api", "Cotton Classics" ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.5"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "App\\": "vendor/"
+    }
+  }
+}
